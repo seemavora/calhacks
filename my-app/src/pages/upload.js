@@ -2,13 +2,15 @@
 import React, { Component } from 'react';
 import styles from '../styles/Upload.css'
 import axios from "axios";
+import Insights from './insights';
 
 class upload extends Component {
  
     state = {
  
         // Initially, no file is selected
-        selectedFile: null
+        selectedFile: null,
+        showUserList: false
     };
  
     // On file select (from the pop up)
@@ -21,7 +23,8 @@ class upload extends Component {
  
     // On file upload (click the upload button)
     onFileUpload = () => {
- 
+
+        this.setState({ showUserList : true });
         // Create an object of formData
         const formData = new FormData();
  
@@ -37,7 +40,7 @@ class upload extends Component {
  
         // Request made to the backend api
         // Send formData object
-        axios.post("api/uploadfile", formData);
+        // axios.post("api/uploadfile", formData);
     };
  
     // File content to be displayed after
@@ -48,7 +51,7 @@ class upload extends Component {
  
             return (
                 <div>
-                    <h2>File Details:</h2>
+                    {/* <h3>File Details:</h3>
                     <p>File Name: {this.state.selectedFile.name}</p>
  
                     <p>File Type: {this.state.selectedFile.type}</p>
@@ -56,7 +59,7 @@ class upload extends Component {
                     <p>
                         Last Modified:{" "}
                         {this.state.selectedFile.lastModifiedDate.toDateString()}
-                    </p>
+                    </p> */}
  
                 </div>
             );
@@ -87,6 +90,7 @@ class upload extends Component {
                     </button>
                 </div>
                 {this.fileData()}
+                {this.state.showUserList ? <Insights/> : null}
             </div>
         );
     }
