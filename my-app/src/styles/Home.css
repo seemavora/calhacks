@@ -1,0 +1,12 @@
+p.intro{
+    color: dodgerblue;
+}
+
+body{
+    text-align: center;
+    background-image:url('background.png') ;
+    color:rgb(76, 23, 49);
+    font-family:'Courier New', Courier, monospace; 
+}
+
+
