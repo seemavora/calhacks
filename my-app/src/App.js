@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import UploadFile from './pages/upload';
+import AboutUs from "./pages/aboutUs";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 //Router: tell React that we want to have some routes in our application; it will wrapped around 
 //all the different routes 
@@ -16,6 +17,9 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/upload&explore" element={<UploadFile/>}/>
+          <Route exact path="/aboutus" element={<AboutUs/>}/>
+          
+
         </Routes>
       </Router>
     </div>
