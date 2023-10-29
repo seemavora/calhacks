@@ -1,0 +1,22 @@
+.title{
+    text-align: left;
+    font-family: 'Helvetica Neua', sans-serif;
+    font-size: 400%;
+    margin-left: 110px;
+}
+.picture img{
+    width: 70%;
+    height:70%;
+    align-items:center;
+}
+
+div.item{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    font-size: x-large;
+}
+.caption {
+    display: block;
+}
