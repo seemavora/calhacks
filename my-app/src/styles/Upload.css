@@ -6,3 +6,10 @@ body{
 
 
 }
+.videoTitle{
+    font-family:'Helvetica Neue', sans-serif;
+    color:rgb(76, 23, 49);
+    text-align: left;
+    margin-left: 110px;
+    font-size: 400%;
+}
