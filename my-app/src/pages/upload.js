@@ -77,8 +77,8 @@ class upload extends Component {
                 <h1>
                     
                 </h1>
-                <h3>
-                    Video Upload!
+                <h3 className= 'videoTitle'>
+                    Video Upload
                 </h3>
                 <div>
                     <input type="file" onChange={this.onFileChange} />

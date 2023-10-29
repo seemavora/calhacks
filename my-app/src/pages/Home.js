@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/Home.css';
 import {Link} from 'react-router-dom';
 import Purpose from "../assets/purpose.png";
-import Why from "../assets/bear.jpeg";
+import Why from "../assets/bear.gif";
 
 function Home() {
   return (
@@ -17,26 +17,29 @@ function Home() {
                 <h2 className='intro'>
                  <h3>Professors, Managers, Camp Leaders, Tutors, and More!</h3> 
                   <h4>
-                    Staring at too many faces all day and want to know how to improve understanding and engagement? 
+                    Staring at a screen of faces all day and never truly know the vibe of the room, and want to improve understanding and engagement? 
                     <p>
-                      BearVibeCheck is the place for you
+                      BearVibeCheck is the place for you!
                     </p>
                   </h4>
                 </h2>
               </div>
               </div> 
         <div className='inDepth'>
-            <h3>
-              Why Is This Important?
-            </h3>
+            
             <div class='position'>
               <div class='image2'>
                 <img src= {Why}/>
               </div>
               <div class='longText'>
-                <p>
-                  fjdalgjiaogjiaog;j
-                </p>
+                <h3 class = 'header'>
+                  Why Is This Important?
+                  <p class='importance'>
+                  Allows meeting hosts be able to gadge audience feedback post-meeting.
+                  Gives teachers an understanding on how well their students grasped the material. 
+                  </p>
+                </h3>
+                
               </div>
             </div>
         </div>        
